@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="blog"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link type="text/css" rel="stylesheet" href="css/materialize.css"  >
+   <script type="text/javascript" src="./oqpokemonapp.js"></script>
+    <title>Blog Pokémon</title>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img class="responsive-img" src="./imagens/Logo.png" alt="" width="150" height="80"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oqpokemon.html">O que é Pokémon?</a></li>
+            <li><a href="./cadastro/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+</head>
+<body class="grey lighten-2">
+
+
+
+    <div class="container">
+      <div class="row col m8" ng-controller="Rest">
+
+        <div class="col s12 m7">
+          <div class="card" ng-repeat="(id,publicacao) in publicacoes">
+            <div class="card-image">
+              <img class="responsive-img" ng-src="https://api-fake-blog.herokuapp.com{{ publicacao.thumbImage }}" alt="" width="150" height="350">
+              <span class="card-title grey black-text col s12 "><strong><p>{{ publicacao.title }}</p></strong>
+               </span>
+            </div>
+            <div class="card-content">
+              <p>Pokémons são seres místicos e incríveis, mas você já parou para pensar sobre quais deles são os mais fortes? 
+                Selecionamos alguns dos nomes até a oitava geração que com certeza se destacam dentro do cânone e as maiores habilidades e curiosidades sobre cada um deles!
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="black-text" href="oqpokemon.html#/{{id}}">Ver toda a postagem</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s5">
+          <div class="white" id="postagensF">
+            <a href="#!"><a href=""></a><h1 class="flow-text">Postagens Famosas</h1></a>
+            <a href="#!"><h2 class="flow-text">Pokemons Geração 8</h2></a>
+            <a href="#!"><h2 class="flow-text">Pokemons Verdes</h2></a>
+            <a href="#!"><h2 class="flow-text">Fraquezas dos pokemons mais fortes</h2></a>
+            <a href="#!"><h2 class="flow-text">Estrategias de batalha</h2></a>
+          </div>
+         </div>
+       
+
+  
+      </div>
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!">6</a></li>
+        <li class="waves-effect"><a href="#!">7</a></li>
+        <li class="waves-effect"><a href="#!">8</a></li>
+        <li class="waves-effect"><a href="#!">9</a></li>
+        <li class="waves-effect"><a href="#!">10</a></li>
+        <li class="waves-effect"><a href="#!">11</a></li>
+        <li class="waves-effect"><a href="#!">12</a></li>
+        <li class="waves-effect"><a href="#!">13</a></li>
+        <li class="waves-effect"><a href="#!">14</a></li>
+        <li class="waves-effect"><a href="#!">15</a></li>
+      
+
+
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+    
+</body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Tudo sobre pokemon</h5>
+        <p class="grey-text text-lighten-4">Curiosidades e explicaçoes sobre o universo pokemon.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Outros links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">O que é pokemon.</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Faça login.</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Registre-se</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="#!">Mais links.</a>
+    </div>
+  </div>
+</footer>
+</html>

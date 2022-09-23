@@ -1,0 +1,49 @@
+#fundo{
+    margin-top: 3vh;
+    border-radius: 20px;
+   padding-left: 1vw;
+   padding-right: 1vw;
+   padding-bottom: 1vh;
+}
+#fundo h1,.imgd{
+    text-align: center;
+}
+.imgp{
+    border: solid black 2px;
+}
+footer{
+    margin-top: 2vh;
+}
+#tabela{
+    margin-top: 4vh;
+}
+.container{
+    width: 70%;
+}
+#postagensF{
+    text-align: center;
+    position: fixed;
+    width: max-content;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-bottom: 3vh;
+    border-radius: 15px;
+    margin-left: 10vw;
+    margin-top: 8vw;
+}
+#postagensF h1{
+
+    font-size: calc(2em);
+
+}
+#postagensF h2{
+border-bottom: 1px solid black;
+padding-bottom: 0.5vh;
+margin-top: 0.5vh;
+margin-bottom: 1.3vh;
+   color: red;
+
+}
+#postagensF h2:hover{
+    color: green;
+}

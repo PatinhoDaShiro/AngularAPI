@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Blog">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+         
+   <link type="text/css" rel="stylesheet" href="css/materialize.css"  >
+   <script type="text/javascript" src="./oqpokemonapp.js"></script>
+    <title>Blog Pokémon</title>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img class="responsive-img" src="./imagens/Logo.png" alt="" width="150" height="80"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="oqpokemon.html">O que é Pokémon?</a></li>
+            <li><a href="./cadastro/login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+</head>
+<body>
+  <div class="container">
+    <div class="row col m8" ng-controller="Rest">
+
+    <div class="card">
+      <div class="card-image">
+        <img class="responsive-img" ng-src="https://api-fake-blog.herokuapp.com{{ publicacao.thumbImage }}" alt="" width="150" height="350">
+        <span class="card-title grey black-text col s12 "><strong><p>{{ publicacao.title }}</p></strong>
+
+         </span>
+      
+      </div>
+    
+    </div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
